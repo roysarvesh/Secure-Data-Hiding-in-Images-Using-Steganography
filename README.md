@@ -1,88 +1,60 @@
-Secure Data Hiding in Images Using Steganography
+🔒 Secure Data Hiding in Images Using Steganography
+📌 Overview
 
-SecureImageStego is a Python-based steganography tool that allows users to hide and retrieve secret messages inside images using a password-protected encryption mechanism. The project is built with OpenCV, NumPy, and Streamlit, providing a simple and intuitive graphical user interface (GUI) for encoding and decoding messages securely.
+In the digital era, secure data transmission is crucial to prevent unauthorized access. This project implements steganography to hide text messages within image pixels using a password-protected encryption mechanism. The system ensures confidentiality by hashing passwords and validating image capacity before embedding messages. A Streamlit-based GUI provides an intuitive interface for seamless encryption and decryption.
+🛠️ Technologies Used
 
-Features
+    Programming Language: Python
+    Libraries: OpenCV, NumPy, Streamlit, PIL (Pillow), Hashlib
+    Platform: Streamlit (GUI), Jupyter Notebook/VS Code (Development)
 
-Encrypt Messages: Hide text messages inside an image with a password.
+✨ Unique Features
 
-Password Protection: Uses SHA-256 hashing to secure stored messages.
+✅ Password-Protected Steganography – Uses SHA-256 hashing for enhanced security.
+✅ Pixel-Level Encryption – Embeds both hashed passwords and messages securely.
+✅ Capacity Validation – Ensures image size can accommodate the message before embedding.
+✅ User-Friendly Streamlit GUI – Simple interface for encryption & decryption.
+✅ Efficient & Lightweight – Works with PNG/JPG images without significant quality loss.
+📥 Installation & Setup
 
-Capacity Check: Ensures the image has enough space for data embedding.
+    Clone the Repository
 
-Decrypt Messages: Retrieve hidden messages only with the correct password.
+git clone https://github.com/roysarvesh/Secure-Data-Hiding-in-Images-Using-Steganography.git
+cd Secure-Data-Hiding-in-Images-Using-Steganography
 
-Streamlit GUI: A user-friendly web interface for easy operation.
-
-Supports PNG & JPG Images
-
-Installation & Setup
-
-Prerequisites
-
-Ensure you have Python installed on your system. You can download it from python.org.
-
-Steps to Install
-
-Clone the repository:
-
-git clone https://github.com/your-username/Secure-Image-Stego.git
-cd Secure-Image-Stego
-
-Install dependencies:
+Install Dependencies
 
 pip install -r requirements.txt
 
-Run the application:
+Run the Application
 
-streamlit run app.py
+    streamlit run app.py
 
-Usage
+📌 Usage
+🔹 Encryption (Hiding Message)
 
-Encrypting a Message:
+    Upload an image (PNG/JPG/JPEG).
+    Enter the secret message.
+    Set a password for protection.
+    Download the encrypted image.
 
-Upload an image (PNG/JPG).
+🔹 Decryption (Retrieving Message)
 
-Enter the message you want to hide and a secure password.
+    Upload the encrypted image.
+    Enter the correct password.
+    Retrieve the hidden message securely.
 
-The image will be processed and you can download the new encoded image.
+🚀 Future Scope
 
-Decrypting a Message:
+🔹 AES/RSA Encryption – For even stronger security.
+🔹 Multi-Format Support – Extending to GIFs, BMPs, and video steganography.
+🔹 AI-Based Detection Prevention – Making it resistant to steganalysis.
+🔹 Cloud Integration – Secure cloud-based encrypted image storage.
+🔹 Mobile Application – Developing an Android/iOS app for real-time steganography.
+📜 License
 
-Upload the encoded image.
+This project is open-source and available under the MIT License.
+📩 Contact
 
-Enter the correct password.
-
-Retrieve the hidden message.
-
-How It Works
-
-The message is converted into UTF-8 encoded bytes.
-
-A SHA-256 hash of the password is stored in the image.
-
-The message bytes are embedded into pixel values in a secure and structured manner.
-
-During decryption, the password is verified, and the hidden message is extracted only if it matches.
-
-Security Measures
-
-SHA-256 hashing ensures that the password is never stored in plaintext.
-
-Error handling prevents decryption with an incorrect password.
-
-Capacity validation ensures that images are large enough for embedding.
-
-
-License
-
-This project is licensed under the MIT License. Feel free to use and modify it as needed.
-
-Contributing
-
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
-
-Contact
-
-For any issues or suggestions, feel free to reach out via GitHub Issues.
-
+📌 Developer: Sarvesh Kumar Roy
+📌 GitHub: Secure-Data-Hiding-in-Images-Using-Steganography
