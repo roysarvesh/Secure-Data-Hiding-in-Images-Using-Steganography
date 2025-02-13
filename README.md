@@ -57,4 +57,4 @@ This project is open-source and available under the MIT License.
 📩 Contact
 
 📌 Developer: Sarvesh Kumar Roy
-📌 GitHub: Secure-Data-Hiding-in-Images-Using-Steganography
+📌 GitHub: https://github.com/roysarvesh/Secure-Data-Hiding-in-Images-Using-Steganography
