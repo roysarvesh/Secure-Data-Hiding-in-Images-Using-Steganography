@@ -1,4 +1,6 @@
 🔒 Secure Data Hiding in Images Using Steganography
+
+
 📌 Overview
 
 In the digital era, secure data transmission is crucial to prevent unauthorized access. This project implements steganography to hide text messages within image pixels using a password-protected encryption mechanism. The system ensures confidentiality by hashing passwords and validating image capacity before embedding messages. A Streamlit-based GUI provides an intuitive interface for seamless encryption and decryption.
